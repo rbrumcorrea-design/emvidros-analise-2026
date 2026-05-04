@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EM Vidros — Análise Comercial Jan–Abr 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0f1117;
+    color: #e5e7eb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+  }
+  .logo {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #6b7280;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .sub {
+    font-size: 14px;
+    color: #9ca3af;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 780px;
+    width: 100%;
+  }
+  .card {
+    background: #1a1d27;
+    border: 1px solid #2e3250;
+    border-radius: 14px;
+    padding: 28px 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .15s, border-color .15s, box-shadow .15s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: #4f6ef7;
+    box-shadow: 0 8px 32px rgba(79,110,247,.18);
+  }
+  .card-icon { font-size: 32px; }
+  .card-title { font-size: 17px; font-weight: 700; color: #fff; }
+  .card-desc { font-size: 13px; color: #9ca3af; line-height: 1.5; }
+  .card-tag {
+    display: inline-block;
+    font-size: 11px;
+    background: #21253a;
+    color: #818cf8;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-top: 4px;
+    width: fit-content;
+  }
+  .footer {
+    margin-top: 48px;
+    font-size: 12px;
+    color: #374151;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="logo">EM Vidros Grupo</div>
+<h1>📊 Análise Comercial</h1>
+<p class="sub">Janeiro – Abril 2026 · Dados extraídos do ERP Webglass</p>
+
+<div class="grid">
+  <a class="card" href="dashboard_vendas_jan_abr_2026.html">
+    <div class="card-icon">💰</div>
+    <div class="card-title">Vendas por Filial</div>
+    <div class="card-desc">Executado vs. meta mensal por consultor em todas as 7 unidades do grupo. Jan–Abr 2026.</div>
+    <div class="card-tag">7 filiais · metas · consultores</div>
+  </a>
+
+  <a class="card" href="dashboard_analise_filiais_2026.html">
+    <div class="card-icon">🏪</div>
+    <div class="card-title">Viabilidade de Filiais</div>
+    <div class="card-desc">Análise estratégica de cobertura de mercado para STI, BAC e THE. Dependência e risco de fechamento.</div>
+    <div class="card-tag">STI · BAC · THE · risco</div>
+  </a>
+
+  <a class="card" href="dashboard_rotas_rap_jan_abr_2026.html">
+    <div class="card-icon">🗺️</div>
+    <div class="card-title">Rotas — Base Raposa</div>
+    <div class="card-desc">Volume de vendas por rota geográfica da base RAP. 10 rotas cobrindo Maranhão, Piauí e Pará.</div>
+    <div class="card-tag">Base RAP · 10 rotas · R$ 12,07 M</div>
+  </a>
+
+  <a class="card" href="dashboard_rotas_itz_jan_abr_2026.html">
+    <div class="card-icon">🗺️</div>
+    <div class="card-title">Rotas — Base Imperatriz</div>
+    <div class="card-desc">Volume de vendas por rota geográfica da base ITZ. 12 rotas cobrindo MA, PA, TO e PI.</div>
+    <div class="card-tag">Base ITZ · 12 rotas · R$ 8,16 M</div>
+  </a>
+</div>
+
+<div class="footer">Confidencial · Uso interno · EM Vidros Grupo © 2026</div>
+
+</body>
+</html>
